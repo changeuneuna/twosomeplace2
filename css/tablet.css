@@ -1,0 +1,79 @@
+@charset 'utf-8';
+
+.main-area .swiper-wrapper img.mo{display: none;}
+.main-area .swiper-wrapper img.pc{display: none;}
+.main-area .swiper-wrapper img.t{display: block;}
+
+.popup-bg{width: 70%;}
+.scroll .popup-bg{width: 70%;}    
+
+.top-menu .pc{padding-top: 10px; right: 20px;}
+.top-menu .pc li{margin-left: 30px;}
+.top-menu .pc li a{font-size: 12px;}
+
+.gnb>li{padding: 0px 25px;}
+
+/* 신메뉴 */
+.new h2{font-size: 32px; margin: 0 20px;}
+.new-list img{display: none;}
+
+/* 배너 */
+.banner-img .banner-pc{display: none;}
+.banner-img .banner-t{display: block;}
+.banner{position: relative; background: url(../img/banner_1t.jpg) no-repeat center; height: 250px;}
+.banner-img{margin-left: 50px;}
+.text-area {top: 35px;}
+.text-area p:nth-child(1){padding-bottom: 10px;}
+.text-area p:nth-child(2){padding-bottom: 20px;}
+
+/* 공지/이벤트 */
+.notice-area{float: none; margin: 0 auto 50px; max-width: 570px; width: 100%;}
+.event-area{float: none; width: 100%;}
+
+/* 인기메뉴 */
+.head-area h2 a {font-size: 32px; margin: 0 20px;}
+.swiper3 .swiper-pagination, .swiper4 .swiper-pagination
+{
+    display: block; position: absolute; bottom: -50px; left: 50%; transform: translateX(-50%);
+}
+.swiper3 .swiper-pagination-bullet, .swiper4 .swiper-pagination-bullet{width: 10px; height: 10px; border-radius: 50%; background: #5a5b5d; vertical-align: middle; opacity: 1;}
+.swiper3 .swiper-pagination-bullet-active, .swiper4 .swiper-pagination-bullet-active{width: 14px; height: 14px; border-radius: 50%; background: transparent; border: 3px solid #5a5b5d; box-sizing: border-box;}
+
+/* 고정이미지 영역 */
+.app-info{height: 400px;}
+
+/* 카드레이아웃 영역 */
+.store-membership {max-width: 580px;}
+.store {
+    background: url(../img/store_t1.jpg) no-repeat; float: none;
+    width: 580px; height: 300px; padding-left: 0; margin-left: 0; text-align: center;
+}
+.store h3{padding: 50px 0 20px 0; font-size: 28px;}
+.store b{font-size: 18px;}
+.store p{width: 100%; padding: 20px 0; font-size: 16px;}
+.store form {left: 18%;}
+.store form input {width: 380px;}
+.membership {float: none;}
+.theme {padding-top: 20px;}
+.theme .item:nth-child(2){margin-right: 0;}
+
+/* 하단영역 */
+footer{height: 300px;}
+.footer-left{float: none; width: 100%; text-align: center;}
+.footer-left h1{float: left; margin-top:-35px;}
+.footer-left p{margin-top: 0px; font-size: 14px;}
+.footer-logo{position: absolute; top: 90px; left: 50%; transform: translateX(-50%);}
+.app-down {display: block; padding-top: 10px; text-align: center;}
+.footer-nav{top: 120px; right: 50%; transform: translateX(50%); padding: 0; border: none;}
+.footer-nav li{padding :0 10px;}
+.footer-nav li a{font-size: 11px;}
+.footer-right{float: none; width: 100%; padding-top: 100px; margin-top: 0px; text-align: center;}
+.footer-right address{width: 100%; padding-top: 30px; font-size: 11px; line-height: 17px;}
+.footer-right .site-info{width: 100%; margin: 0; padding: 10px; box-sizing: border-box;}
+.footer-right .site-info li{line-height: 15px; font-size: 11px; text-align: left;}
+.footer-right small{    
+    display: block; position: absolute; width: 50%;
+    left: 50%; bottom: -35px; transform: translateX(-50%);
+    font-size: 10px;
+}
+

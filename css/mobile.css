@@ -1,0 +1,245 @@
+@charset 'UTF-8';
+.icon{display: inline-block; background-image: url(../img/sprites-mobile.png); background-size: 300px 400px;}
+/* 아이콘 */
+.icon-logo{width: 190px; height: 13px; background-position: 0px -245px;} 
+.icon-store{width: 28px; height: 28px; background-position: -115px -50px;}
+.icon-search{width: 28px; height: 28px; background-position: -150px -50px;}
+.icon-search-category{width: 20px; height: 20px; background-position: -275px 0px;}
+.icon-close-category{width: 28px; height: 28px; background-position: -235px 0px;}
+.icon-menu{width: 30px; height: 30px; background-position: -5px -75px;}
+.icon-link{width: 20px; height: 20px; background-position: -185px -50px;}
+.icon-tab1{width: 35px; height:35px; background-position: -5px -5px;}
+.icon-tab2{width: 35px; height:35px; background-position: -45px -5px;}
+.icon-tab1.active{width: 35px; height:35px; background-position: -124.5px -5px;}
+.icon-tab2.active{width: 35px; height:35px; background-position: -85px -5px;}
+.icon-google{width: 155px; height: 54.5px; background-position: 0px -125px;}
+.icon-app{width: 155px; height: 54.5px; background-position: 0px -185px;}
+.icon-footer-logo{width: 50px; height: 35px; background-position: -170px -5px;}
+.icon-bg{width: 141px; height: 138.5px; background-position: 0px -256px;}
+.icon-cj{width: 125px; height: 100px; background-position: -175px -300px;}
+.icon-login{width: 30px; height: 30px; background-position: -115px -90px;}
+.icon-login.active{width: 30px; height: 30px; background-position: -155px -90px;}
+.icon-cart{width: 30px; height: 30px; background-position: -190px -90px;}
+.icon-down.active{width: 20px; height: 20px; background-position: -85px -50px;}
+.icon-down{width: 20px; height: 20px; background-position: -85px -75px;}
+.icon-category.active{width: 20px; height: 20px; background-position: -85px -50px;}
+.icon-category{width: 20px; height: 20px; background-position: -85px -75px;}
+.icon-close{width: 30px; height: 30px; background-position: -40px -75px;}
+.icon-instagram{width: 28px; height: 28px; background-position: -170px -130px;}
+.icon-facebook{width: 28px; height: 28px; background-position: -205px -130px;}
+.icon-youtube{width: 28px; height: 28px; background-position: -240px -130px;}
+
+/* 상단 네비게이션 기본 */
+header{height: 70px;}
+header h1{padding-top: 0; padding-left: 20px; text-align: left; line-height: 60px;}
+.top-menu .pc{display: none;}
+.top-menu .mo{display: block; position: absolute; top: 20px; right: 20px;}
+.top-menu .mo li{float: left; padding-left: 5px;}
+
+header.scroll{height: 70px; background: #fff;}
+header.scroll h1{padding: 0 0 0 20px;}
+
+.popup-bg{display: none;}
+
+/* 검색창 */
+.search-bg{top: 70px; height: 150px; background: #fff;}
+.search-area label{display: none;}
+.col{width: 100%; float: none;}
+.select > a{position: relative; padding-left: 20px;}
+.select{margin: 0; border: none;}
+.select i{position: absolute; top: 20px; right: 20px;}
+.select ul{position: unset; padding: 0 10px; border: none;}
+.select ul li{line-height: 30px;}
+.select ul li a{padding: 0 20px; color: #5a5b5d; font-size: 14px;}
+.select ul li:first-child{padding-top: 10px; border-top: 1px solid #ebebeb;}
+.select ul li:last-child{padding-bottom: 10px; border-bottom: 1px solid #ebebeb;}
+.search-input{position: relative; float: none; width: 100%; margin: 0; border-bottom: 10px solid #ebebeb;}
+.search-input input{padding-left: 20px; border: none;}
+.search-input button{top: 15px; right: 20px;}
+
+/* 메뉴 */
+.popup-nav .pc{display: none;}
+.popup-nav .mo{display: block;}
+
+nav{
+    position: fixed; top: 0; right: -290px; width: 290px; height: 100%; 
+    background: #fff; transition: 0.5s; z-index: 1;
+}
+nav.open{right: 0;}
+.mo-depth2-bg{
+    display: none; position: fixed; top: 0; left:0; width: 100%; height: 100%;
+    background: rgba(90, 91, 93, 0.6); z-index: 1;
+}
+.gnb{
+    display: block; height: calc(100vh - 130px);
+    padding-left:0px; overflow-y: auto; text-align: left;
+}
+.gnb>li{float: none; padding: 0 20px;}
+.gnb>li>a{position: relative; border-bottom:1px solid #ebebeb; line-height: 50px; display: block; width: 100%;}
+.gnb>li>a i{position: absolute; top: 50%; right: 0; transform: translateY(-50%);}
+.gnb ul{
+    position: relative; top:0; padding-left: 20px; 
+    border-bottom:1px solid #ebebeb; box-sizing: border-box;
+}
+.gnb ul li{margin-bottom: 0px; line-height: 40px;}
+.gnb ul li a{color: #5a5b5d;}
+
+#btn-close{display: block; position: absolute; right: 20px; top: 20px;}
+.user-menu{position: relative; height: 70px;}
+.user-menu .user-list{position: absolute; top: 20px; right: 50px;}
+.user-menu li{float: left; padding-right:10px;}
+.sns-nav{width: 100%; height: 50px; padding-left: 20px; border-bottom: 5px solid #ebebeb; border-top: 1px solid #ebebeb; box-sizing: border-box;}
+.sns-nav li{float: left; padding: 10px 60px 0 0;}
+.sns-nav li .sns{display: inline-block; width: 60px; padding: 15px 0 0 30px; font-size: 11px;} 
+
+/* 메인슬라이드 */
+.main-area .swiper-wrapper img.mo{display: block;}
+.main-area .swiper-wrapper img.pc{display: none;}
+.main-area .swiper-wrapper img.t{display: none;}
+.main-area{height:auto;}
+.main-area img{width:100%;}
+section{display: block; padding-top:70px;}
+
+/* 신메뉴 */
+.new{width: 100%; height: auto;}
+.new h2{padding: 40px 0 20px 20px; font-size: 18px;}
+.new-list{display: none;}
+.new-list img{display: none;}
+.swiper-slide .swiper-slide-next .img-wrap{display: none;}
+.newmenu-area{width:100%}
+.newmenu-area .swiper-container{width: 100%; margin:auto; margin-bottom: 45px;}
+.newmenu-area .swiper-button-prev,.newmenu-area .swiper-button-next{display: none;}
+.newmenu-area .swiper-slide{width: 80% !important;}
+.newmenu-area .swiper-slide img{width: 100%; height: 100%;}
+.newmenu-area .swiper-slide .img-wrap{width: 100%;}
+.newmenu-area .swiper-slide .text-box{
+    position: relative; width: 100%; height: auto;
+    margin-left: 0; padding: 10px 0; border: none;
+    color: #231815; text-align: center;
+}
+.swiper-slide a .text-box p{display: none;}
+.swiper-slide a .text-box b{display: none;}
+.swiper-slide a .text-box h3{padding: 0; font-size: 13px;}
+.newmenu-area .swiper-pagination{display: none;}
+
+/* 배너 */
+.banner-img .banner-pc{display: none;}
+.banner-img .banner-t{display: none;}
+.banner{position: relative; background: url(../img/banner_1m.jpg) no-repeat; background-size: 100% 150px; height: 150px;}
+.banner-img .banner-mo{display: block;}
+.banner-img .banner-mo img{width: 130px; height: 95px;}
+.banner-img{position: absolute; top: 40px; left: -50%; margin-left:40px;}
+.text-area button{display: none;}
+.text-area{top: 15px; right: 20px; text-align: left;}
+.text-area p:nth-child(1) span{display: none;}
+.text-area p:nth-child(1){padding-bottom: 10px; font-size: 10px;}
+.text-area p:nth-child(2){padding-bottom:30px; font-size: 12px; font-weight : bold; line-height: 20px;}
+
+/* 인기메뉴 */
+.best{width: 100%; height: auto; margin-bottom: 45px;}
+.swiper3 .swiper-pagination, .swiper4 .swiper-pagination{display: none;}
+/* 탭메뉴 */
+.head-area h2 a{padding: 40px 0 20px 20px; font-size: 18px;}
+.head-area .tab-menu{position: absolute; top: 40px; right: 20px;}
+.head-area .tab-menu span{display: none;}
+.head-area .tab-menu a{padding: 0px 5px; border: none;}
+.head-area .tab-menu a.active{border: none;}
+
+.bestmenu-list li .hover{display:none;}
+.bestmenu-list .swiper-slide{width: 42% !important;}
+.bestmenu-list li .bestmenu img{ width: 100%; margin:0;}
+.bestmenu-list li .bestmenu h3 {margin-top: 10px; font-size: 11px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.bestmenu-list li a{margin: 0px;}
+.top-menu{width: 100%;}
+
+/* 배경이미지 */
+.app-info a{display: inline-block;}
+.app-info{position: relative; width: 100%; height: 160px; margin-top: 40px; background:#5a5b5d;}
+.app-info i{position: absolute; top: 12px; right: 20px;}
+.app-info dl{padding: 40px 0 0 20px; color: #fff; text-align: center;}
+.app-info dl dt{font-size: 16px; font-weight: bold; line-height: 32px;}
+.app-info dl dd{font-size: 12px; line-height: 20px;}
+
+/* 공지 */
+.info-area-color{width: 100%; background: none;}
+.info-area{width: 100%; height:auto; padding: 0px;}
+.notice-area{position: relative; float: none; max-width: 100%; height: 50px; overflow: hidden; background: #ebebeb;}
+.notice-area .title h3{display: none;}
+.title .icon-link{top: 15px; right: 20px;}
+.info .notice-list li{position: relative; padding: 0px; font-size: 14px; line-height: 50px;}
+.info .notice-list li b{padding: 0 10px 0 20px;font-size: 14px;} 
+.info .notice-list li .notice{width:65%;}
+.info .notice-list li .date{position: absolute; top: 0px; right: 50px;}
+/* 이벤트 */
+.event-area{float: none; width: 100%; margin-top: 20px;}
+.event-area .swiper-container{max-width: 100%; height: auto;}
+.event-area .swiper-slide {width: 90%;}
+.event-area .swiper-pagination{display: none;}
+
+
+/* 매장찾기 */
+.store-membership{padding: 40px 0; overflow: hidden;}
+.store{display: none;}
+/* 테마카페 */
+.membership{float: none;}
+.theme{width: 100%; overflow:none;}
+.theme .item{float: none; margin: 20px;}
+.theme .item:nth-child(2){margin-right: 20px;}
+.theme .item a{height: 170px;}
+.theme img{height: 100%; vertical-align: top;}
+.theme-text dl{top:0; left: 200px; padding: 0; text-align: left;}
+.theme-text dl dt{padding-bottom:25px; color: #231815; font-size: 14px;}
+.theme-text dl dd{color: #231815; font-size: 12px; line-height: 25px;}
+.bg{display: none;}
+
+/* 멤버십 */
+.sns-area{display: none;}
+.last-area{width: 100%; padding-top: 25px; overflow: hidden;}
+.last-area .cj {float: none; left: 50%; transform: translateX(-50%); width:90%;}
+.last-area .cj a span{position: absolute; right: 20px;}
+.last-area .cj a h3{top: 35px; left: 20px; font-size: 16px; text-align: left;}
+.last-area .cj a p{left: 20px; bottom: 30px; font-size: 12px; line-height: 24px;}
+
+/* footer */
+footer{height: 330px;}
+.footer-left{float: none; width: 100%; text-align: center;}
+.footer-left h1{float: left; margin-top:0;}
+.footer-left p{margin-top: 0px; font-size: 14px;}
+.footer-logo{position: absolute; top: 80px; left: 50%; transform: translateX(-50%);}
+.app-down{display: block; padding-top: 10px; text-align: center;}
+.footer-nav{position: unset; transform: none; width: 340px; margin: auto; padding-top: 60px;}
+.footer-nav li{padding :0 9px; border-right: 1px solid #5a5b5d;}
+.footer-nav li:last-child{border: none;}
+.footer-nav li a{font-size: 11px;}
+
+.footer-right{float: none; width: 100%; margin-top: 0px; padding-top: 30px; text-align: center;}
+.footer-right address{width: 60%; margin: auto; padding-top: 0px; font-size: 11px; line-height: 17px;}
+.footer-right .site-info{margin: 0; padding: 5px;}
+.footer-right .site-info li{font-size: 11px; line-height: 15px; text-align: left;}
+.footer-right .site-info li:nth-child(1){padding: 0;}
+.footer-right .site-info li:nth-child(3){padding: 0;}
+.footer-right small{    
+    display: block; position: absolute; left: 50%; bottom: -35px; transform: translateX(-50%); width: 50%; font-size: 10px;
+}
+
+/* 위로가기 */
+.icon-go-top{display: none;}
+
+/* 로그인 */
+.popup{
+    display: none; position: fixed; top: 0; left: 0; transform: none;
+    width: 100%; height: 100%; padding:15px; background: #ebebeb;
+}
+.popup-title h2{padding-top: 60px; font-size: 24px;}
+.popup-title p{font-size: 14px;}
+.popup-title button{top: 20px; right: 20px;}
+.login-wrap{padding: 30px; box-sizing: border-box; border-top: 3px solid #a9263d; text-align: center}
+.login-wrap input{width: 100%;}
+#btn-login{font-size: 14px;}
+.login-group ul li a{font-size: 12px;}
+.login-bg{
+    position: fixed; top: 0; left:0; width: 100%; height: 100%;
+    background: rgba(90, 91, 93, 0.6); z-index: 200;
+}
+.row .message {font-size: 12px;}
+
